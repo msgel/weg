@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eraserheads</title>
+    <style>
+       
+       body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d1dbbd;
+     }
+
+header { 
+    background-image: url(hh.jpg); 
+            background-size: cover; 
+            background-position: center top; 
+            height: 300px; 
+            text-align: center;
+            color: rgb(206, 229, 249);
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:x-large;
+            font-weight: bold;
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+            position: relative; 
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #071d3d;
+    padding: 10px;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: overline;
+        }
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    background-color:#5e9387; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; 
+}
+
+button:hover {
+    background-color: #535a3b;
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+button:active {
+    transform: translateY(1px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+.ape { 
+    text-wrap:balance;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+         <h1>Eraserheads</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="file:///C:/Users/ASUS/OneDrive/%EB%AC%B8%EC%84%9C/Attachments/Desktop/web/index.html">Home</a></li>
+            <li><a href="file:///C:/Users/ASUS/OneDrive/%EB%AC%B8%EC%84%9C/Attachments/Desktop/web/index.html">About</a></li>
+            <li><a href="file:///C:/Users/ASUS/OneDrive/%EB%AC%B8%EC%84%9C/Attachments/Desktop/web/index.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to the Eraserheads Tribute</h2>
+            <p>Explore the music and legacy of one of the Philippines' most iconic bands.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Eraserheads</h2>
+            <p class="ape">Eraserheads is a Filipino rock band formed in Quezon City in 1989. The band is composed of lead singer and primary songwriter Ely Buendia, guitarist Marcus Adoro, bassist Buddy Zabala, and drummer Raimund Marasigan. Regarded as “the Beatles of the Philippines”, the band is considered as one of the most influential and successful bands in the country.</p>
+       <p class="ape">The band released their debut album, Ultraelectromagneticpop!, in 1993, to critical acclaim and strong sales. Followed by Circus (1994) and Cutterpillow (1995), the band ushered in a second wave of Philippine rock bands in the 1990s. They also received MTV Asia’s Viewers Choice Award at the 1997 MTV Video Music Awards in New York City, the only Philippine artist to have received the award before the conception of the MTV Asia Awards.</p>
+        </section>
+
+        <section id="discography">
+            <h2>Top Albums</h2>
+            <div class="button-container">
+                <button id="button1">Cutterpillow</button>
+                <button id="button2">Circus</button>
+                <button id="button3">Ultraelectromagneticpop!</button>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for feedback or inquiries.</p>
+            <form action="/submit" method="post">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                  <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Eraserheads</p>
+    </footer>
+
+    <script>
+         document.addEventListener("DOMContentLoaded", function() {
+        const button1 = document.getElementById("button1");
+const button2 = document.getElementById("button2");
+const button3 = document.getElementById("button3");
+const button4 = document.getElementById("button4");
+
+button1.addEventListener("click", function() {
+    window.location.href = "file:///C:/Users/ASUS/OneDrive/%EB%AC%B8%EC%84%9C/Attachments/Desktop/web/cutterpillow.html";
+    
+});
+
+button2.addEventListener("click", function() {
+    window.location.href = "file:///C:/Users/ASUS/OneDrive/%EB%AC%B8%EC%84%9C/Attachments/Desktop/web/circus.html";
+});
+
+button3.addEventListener("click", function() {
+    window.location.href = "file:///C:/Users/ASUS/OneDrive/%EB%AC%B8%EC%84%9C/Attachments/Desktop/web/ultra.html";
+});
+button4.addEventListener("click", function() {
+    window.location.href = "file:///C:/Users/ASUS/OneDrive/%EB%AC%B8%EC%84%9C/Attachments/Desktop/web/webpage.html";
+});
+});
+    </script>
+</body>
+</html>
